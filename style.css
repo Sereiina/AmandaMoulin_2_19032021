@@ -1,0 +1,96 @@
+/* GENRAL */
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway/Raleway-VariableFont_wght.ttf');
+}
+body {
+    font-family: 'Raleway' , serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
+}
+
+
+/* NAV */ 
+.reserviaLogo {
+ max-width: 100px;
+ height: auto;
+ margin: 20px;
+}
+.Menu {
+    float: right;
+    padding: 20px;
+    margin: 20px;
+    text-decoration: none;
+    color: ;
+}
+.Menu:hover {
+    color: black;
+}
+#signUp {
+    font-weight: bold;
+}
+.navText , .underNavText {
+    margin: 20px;
+    padding-bottom: 0px;
+}
+.underNavText {
+    font-size: 13px;
+}
+.posIcon {
+    width: 20px;
+    height: 20px;
+}
+.research {
+margin: 0px 0px 0px 20px;
+width: 200px;
+height: 40px;
+font-size: 15px;
+font-weight: bold;
+}
+.buttonSearch {
+    background-color: #0065FC;
+    border-color:  #0065FC ;
+    color: #DEEBFF;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 0px 10px 10px 0px;
+}
+#form {
+    display:flex ;
+}
+
+#filter {
+    display: flex;
+    margin: 20px 0 0 20px;
+}
+.filterTitle {
+    margin: 15px 0px 0px 0px;
+    font-weight: bold;
+}
+.filterButton {
+    margin: 10px 50px 0px 20px;
+    padding: 0px 15px 0px 15px;
+    max-width: auto;
+    height: 35px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 10px;
+    
+}
+#navText {
+    margin: 0px 0px 0px 20px;
+}
+/* HEBERGEMENT */
+
+/* POPULAIRE */
+
+/* ACTIVITY */
+
+/* ABOUT */
