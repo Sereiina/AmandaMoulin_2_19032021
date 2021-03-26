@@ -129,9 +129,55 @@ border: 1px solid #DEEBFF;
     margin: 0 0 0 20px;
 }
 /* HEBERGEMENT */
+#firstSection {
+    display: flex;
+}
 
+#hosting, #popular  {
+    background-color: #DEEBFF;
+    margin: 0 0 0 20px;
+    border-radius: 20px;
+}
+#hosting {
+    width: 900px;
+    height: 700px;
+}
+.hostingTitle {
+    margin: 0 0 0 20px;
+}
+
+.hostingImg {
+    height: 150px;
+    width: 250px;
+    border-radius: 20px 20px 0 0;
+}
+.hostingFrame {
+    padding: 0.5rem;
+    background-color: white;
+    width: fit-content;
+    border-radius: 20px;
+}
+.hostingImgBackground {
+    display: flex;
+    flex-wrap: wrap;
+}
 /* POPULAIRE */
 
+#popular {
+    width: 400px;
+}
+.popularImg {
+    height: 120px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 0 0 20px 0 ;
+}
+.popularTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px 0 20px;
+}
 /* ACTIVITY */
 
 /* ABOUT */
