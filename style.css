@@ -70,16 +70,16 @@ border: 1px solid #DEEBFF;
     display:flex ;
 }
 
-#filter {
+#filters {
     display: flex;
     margin: 20px 0 0 20px;
 }
 .filterTitle {
-    margin: 15px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
     font-weight: bold;
 }
 .filterButton {
-    margin: 10px 50px 0px 20px;
+    /*margin: 5px 50px 0px 0px; */
     padding: 0px 15px 0px 15px;
     max-width: auto;
     height: 35px;
@@ -87,12 +87,46 @@ border: 1px solid #DEEBFF;
     font-size: 15px;
     background-color: white;
     color: black;
-    border: 1px solid grey;
+    border: none;
     border-radius: 10px;
     
 }
+.iconFilter {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 25px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 30px;
+    border: 2px solid #DEEBFF;
+    border-radius: 25px;
+}
 #navText {
-    margin: 0px 0px 0px 20px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.infoIcon {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #DEEBFF;
+    border-radius: 25px;
+}
+.infoText {
+    margin: 0 0 0 20px;
 }
 /* HEBERGEMENT */
 
