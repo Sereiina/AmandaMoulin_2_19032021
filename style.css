@@ -233,9 +233,10 @@ border: 1px solid #DEEBFF;
 }
 .activityFrame {
     margin: 0 20px 20px 0;
-    background-color: #0065FC;
+    background-color: white;
     width: fit-content;
     border-radius: 20px;
+    box-shadow: 1px 1px 10px #DEEBFF;
 }
 .activityImgFrioul {
     height: 150px;
@@ -243,3 +244,11 @@ border: 1px solid #DEEBFF;
     border-radius: 20px 20px 0 0;
 }
 /* ABOUT */
+#about {
+    background-color: #DEEBFF;
+    display: flex;
+    justify-content: flex-start;
+}
+.aboutLeft, .aboutCenter, .aboutRight {
+    margin: 0 200px 0 20px;
+}
