@@ -275,3 +275,68 @@ h1,h2,h3,h4,h5,h6 {
 .aboutLeft, .aboutCenter, .aboutRight {
     margin: 0 200px 0 50px;
 }
+
+/* RESPONSIVE MOBILE */
+
+@media screen and (max-width: 320px) {
+    body 
+    {
+        width: 320px;
+    }
+    nav 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 320px ;
+        
+    }
+    .reserviaLogo
+    {
+        max-width: 100px;
+        height: auto;
+        margin: 0 80px 0 20px;
+    }
+    .Menu 
+    {
+        font-size: 15px;
+        margin: 0 40px 0 0;
+    }
+    .conteneurMenuOne 
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .conteneurMenuTwo 
+    {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .navText 
+    {
+        font-size: 20px;
+        margin: 0 0 0 20px;
+    }
+    .underNavText 
+    {
+        font-size: 15px;
+        margin: 20px;
+    }
+    .posIcon
+    {
+        margin: 0 0 0 20px;
+        height: ;
+        width: 40px;
+    }
+    .buttonSearch
+    {
+        width: 40px;
+        border-radius: 10px;
+        /* retirer le texte */
+    }
+    #filters
+    {
+        margin: 30px 0 0 20px;
+
+    }
+}
