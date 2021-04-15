@@ -126,7 +126,7 @@ h1,h2,h3,h4,h5,h6 {
 .filter:hover {
     background-color: #DEEBFF;
 }
-#navText {
+#infoTextConteneur {
     display: flex;
     align-items: center;
     margin: 20px 20px 20px 50px;
@@ -279,6 +279,7 @@ h1,h2,h3,h4,h5,h6 {
 /* RESPONSIVE MOBILE */
 
 @media screen and (max-width: 320px) {
+    
     body 
     {
         width: 320px;
@@ -319,13 +320,13 @@ h1,h2,h3,h4,h5,h6 {
     }
     .underNavText 
     {
-        font-size: 15px;
+        font-size: 14px;
         margin: 20px;
     }
     .posIcon
     {
         margin: 0 0 0 20px;
-        height: ;
+        
         width: 40px;
     }
     .buttonSearch
@@ -336,7 +337,34 @@ h1,h2,h3,h4,h5,h6 {
     }
     #filters
     {
-        margin: 30px 0 0 20px;
-
+        margin: 25px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #filtersConteneur 
+    {
+        display: flex;
+        
+        flex-wrap: wrap;
+    }
+    .filterTitle
+    {
+        margin: 0 0 0 20px;
+    }
+    .filter 
+    { 
+        max-width: fit-content;
+        margin: 10px;
+    }
+    .filterButton
+    {
+       height: 25px;
+       font-size: 15px;
+    padding:  0 10px 0 10px;
+    }
+    /* partie filtre a corriger et finir */
+    #infoTextConteneur , .infoText
+    {
+        margin: 10px 0 0px 20px;
     }
 }
