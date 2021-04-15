@@ -223,6 +223,7 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0 50px 50px 50px;
     background-color: white;
     border-radius: 20px;
+    
 }
 .popularContainer {
  display: flex;
@@ -284,6 +285,7 @@ h1,h2,h3,h4,h5,h6 {
     {
         width: 320px;
     }
+    /* Nav Responsive */
     nav 
     {
         display: flex;
@@ -362,9 +364,34 @@ h1,h2,h3,h4,h5,h6 {
        font-size: 15px;
     padding:  0 10px 0 10px;
     }
-    /* partie filtre a corriger et finir */
+        /* partie filtre a corriger et finir */
     #infoTextConteneur , .infoText
     {
         margin: 10px 0 0px 20px;
+    }
+    /* Popular Responsive*/
+    #firstSection
+    {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        
+    }
+    #popular
+    {
+        margin: 0px;
+        border-radius: 0px;
+    }
+    .popularImgBackground
+    {
+        max-width: 320px;
+    }
+    .popularFrame 
+    {
+        margin: 0 20px 20px 20px;
+    }
+    .popularImg
+    {
+        height: 180px;
+        width: 200px;
     }
 }
