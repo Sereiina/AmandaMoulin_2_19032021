@@ -209,8 +209,8 @@ h1,h2,h3,h4,h5,h6 {
     margin: 20px 20px 20px 50px;
 }
 .popularImg {
-    height: 160px;
-    width: 160px;
+    max-height: 800px;
+    max-width: 900px;
     border-radius: 20px;
     object-fit: cover;
     border-bottom-right-radius: 0px;
@@ -279,11 +279,19 @@ h1,h2,h3,h4,h5,h6 {
 
 /* RESPONSIVE MOBILE */
 
-@media screen and (max-width: 320px) {
+@media all and (max-width: 1024px)
+{
+    body
+    {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 900px) { /* augmenter 799 - 900 */
     
     body 
     {
-        width: 320px;
+        max-width: 900px;
     }
     /* Nav Responsive */
     nav 
@@ -346,8 +354,8 @@ h1,h2,h3,h4,h5,h6 {
     #filtersConteneur 
     {
         display: flex;
-        
         flex-wrap: wrap;
+        /* flex grow (sur les enfants, pas parents */
     }
     .filterTitle
     {
@@ -388,10 +396,54 @@ h1,h2,h3,h4,h5,h6 {
     .popularFrame 
     {
         margin: 0 20px 20px 20px;
+        max-width: 900px;
+        
+        max-height: 120px;
+        min-height: 120px;
+        padding: 3px;
     }
     .popularImg
     {
-        height: 180px;
-        width: 200px;
+        max-width: 120px;
+        min-width: 120px;
+        max-height: 120px;
+        min-height: 120px;
+        background-size: cover;
     }
+    .popularContainer
+    {
+        max-height: 130px;
+    }
+    
+    .popularDescription
+    {
+        font-size: 15px;
+        margin: 10px 0 0px 10px;
+    }
+    #hosting 
+    {
+        margin: 0px;
+        border-radius: 0px;
+        background-color: white;
+    }
+    .hostingImgBackground
+    {
+        max-width: 320px;
+        margin: 0px;
+    }
+    .hostingFrame
+    {
+        margin: 0 20px 20px 20px;
+        box-shadow: 2px 2px 20px #DEEBFF;
+    }
+    .hostingTitle
+    {
+        margin: 0 0 0 20px;
+    }
+    .hostingImg
+    {
+        height: 180px;
+        width: 250px;
+    }
+    
 }
