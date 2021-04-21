@@ -11,6 +11,68 @@ body {
     body 
     {
         margin: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+}
+@media (min-width: 900px) /*desktop*/ {
+    .headerDesktop 
+    {
+        display: flex;
+    }
+    .headerMobile
+    {
+        display: none;
+    }
+    .Menu
+    {
+        margin-right: 50px;
+    }
+    .Menu:hover {
+        color: black;
+        border-top: 3px solid #0065FC ;
+    }
+    .searchText
+    {
+        display: flex;
+    }
+    .searchIcon
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) /*mobile*/ {
+    .headerDesktop 
+    {
+        display: none;
+    }
+    .headerMobile
+    {
+        display: inline;
+        width: 100%;
+    }
+    
+    .Menu 
+    {
+        margin: 0px;
+        font-size: 15px;
+        flex-grow: 1;
+        border-bottom: 3px solid #F2F2F2;
+    }
+    .Menu:hover
+    {
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC ;
+    }
+    .searchText
+    {
+        display: none;
+    }
+    .searchIcon
+    {
+        display: inline;
     }
 }
 
@@ -22,6 +84,11 @@ header {
     display: flex;
     justify-content: space-between;
 }
+.conteneurMenuTwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .reserviaLogo {
  max-width: 100px;
  height: auto;
@@ -29,20 +96,19 @@ header {
 }
 .Menu {
     padding: 20px;
-    margin: 0 50px 0 0;
     text-decoration: none;
-    color: #0065FC;
-}
-.Menu:hover {
     color: black;
-    border-top: 3px solid #0065FC ;
 }
+
 .conteneurMenuOne {
     display: flex;
     justify-content: flex-end;
 }
 #signUp {
     font-weight: bold;
+    padding: 20px;
+    text-decoration: none;
+    color:#0065FC;
 }
 .navText , .underNavText {
     margin: 0px 0 20px 0;
@@ -193,6 +259,9 @@ header {
     background-color: white;
     border-radius: 20px;
 }
+.hostingFrame:active {
+    transform: translateY(2px);
+}
 .hostingImgBackground {
     display: flex;
     flex-wrap: wrap;
@@ -202,6 +271,8 @@ header {
 }
 .hostingIcons {
     display: flex;
+    
+    padding-bottom: 10px;
 }
 .hostingIcon {
     color: grey;
@@ -225,9 +296,7 @@ header {
     color: black;
     margin: 0 0 0 50px;
 }
-.popularContainer > .hostingIcons {
-    margin-top: 40px;
-}
+
 /* POPULAIRE */
 
 #popular {
@@ -264,6 +333,7 @@ header {
 .popularContainer {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding-right: 42px;
 }
 .popularContainer > p {
@@ -280,36 +350,45 @@ header {
 }
 
 .activityName {
-    
     font-weight: bold;
 }
-
+.activityFrame > h4 {
+    font-size: 17px;
+    margin-left: 20px;
+}
 .activityImgBackground {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    height: 500px;
     
 }
 .activityImgBig {
-    height:300px;
-    width: 315px;
-    border-radius: 20px;
+    height:390px;
+    width: 300px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 .activityImg {
-    height: 200px;
-    width: 315px;
+    height: 145px;
+    width: 287px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 .activityFrame {
-    margin: 0 50px 50px 0;
-    background-color: white;
+    margin: 0 45px 50px 0;
     width: fit-content;
     border-radius: 20px;
     box-shadow: 1px 1px 10px #DEEBFF;
 }
+.activityFrame:active {
+    transform: translateY(2px)
+}
 .activityImgFrioul {
-    height: 150px;
-    width: 315px;
+    height: 110px;
+    width: 302px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 /* ABOUT */
 #about {
@@ -329,6 +408,7 @@ header {
         flex-direction: column;
         margin: 0;
         padding: 22px;
+        width: 100%;
     }
     .aboutLeft, .aboutCenter, .aboutRight 
     {
@@ -340,63 +420,53 @@ header {
 
 
 
-@media screen and (max-width: 900px) { /* augmenter 799 - 900 */
-    
-    body 
-    {
-        max-width: 900px;
-    }
+@media (max-width: 900px) { 
+
     /* Nav Responsive */
     nav 
     {
         display: flex;
         flex-wrap: wrap;
-        max-width: 320px ;
-        
     }
     .reserviaLogo
     {
-        max-width: 100px;
-        height: auto;
+        width: 90px;
+        height: 45px;
         margin: 0 80px 0 20px;
-    }
-    .Menu 
-    {
-        font-size: 15px;
-        margin: 0 40px 0 0;
     }
     .conteneurMenuOne 
     {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        margin-bottom: 25px;
+        text-align: center;
     }
-    .conteneurMenuTwo 
-    {
-        display: flex;
-        flex-direction: row-reverse;
-    }
+    
     .navText 
     {
-        font-size: 20px;
-        margin: 0 0 0 20px;
+        font-size: 23px;
+        margin: 0 20px 0 20px;
     }
     .underNavText 
     {
         font-size: 14px;
-        margin: 20px;
+        margin: 10px 20px 20px 20px;
     }
     .posIcon
     {
         margin: 0 0 0 20px;
-        
-        width: 40px;
+        width: 50px;
+        height: 50px;
     }
     .buttonSearch
     {
-        width: 40px;
-        border-radius: 10px;
-        /* retirer le texte */
+        width: 55px;
+        border-radius: 15px;
+        position: relative;
+        right: 15px;
+    }
+    .research
+    {
+        width: 250px;
+        height: 50px;
     }
     #filters
     {
@@ -408,7 +478,7 @@ header {
     {
         display: flex;
         flex-wrap: wrap;
-        /* flex grow (sur les enfants, pas parents */
+        
     }
     .filterTitle
     {
@@ -425,32 +495,29 @@ header {
        font-size: 15px;
     padding:  0 10px 0 10px;
     }
-        /* partie filtre a corriger et finir */
+       
     #infoTextConteneur , .infoText
     {
-        margin: 10px 0 0px 20px;
+        margin: 10px 0 15px 20px;
     }
     /* Popular Responsive*/
     #firstSection
     {
         display: flex;
         flex-wrap: wrap-reverse;
-        
+        width: 100%;
     }
     #popular
     {
         margin: 0px;
         border-radius: 0px;
-    }
-    .popularImgBackground
-    {
-        max-width: 320px;
+        width: 100%;
     }
     .popularFrame 
     {
-        margin: 0 20px 20px 20px;
+        margin: 0 0 20px 20px;
         max-width: 900px;
-        
+        box-shadow: 1px 1px 10px 2px rgb(187 187 187 / 60%);
         max-height: 120px;
         min-height: 120px;
         padding: 3px;
@@ -467,11 +534,17 @@ header {
     {
         max-height: 130px;
     }
+    .popularTitle
+    {
+        margin-left: 25px;
+        
+        font-size: 18px;
+    }
     
     .popularDescription
     {
         font-size: 15px;
-        margin: 10px 0 0px 10px;
+        margin: 10px 0 0px 0;
     }
     #hosting 
     {
@@ -486,7 +559,7 @@ header {
     }
     .hostingFrame
     {
-        margin: 0 20px 20px 20px;
+        margin: 0 0 20px 20px;
         box-shadow: 2px 2px 20px #DEEBFF;
     }
     .hostingTitle
@@ -495,8 +568,41 @@ header {
     }
     .hostingImg
     {
-        height: 180px;
-        width: 250px;
+        height: 125px;
+        width: 320px;
+        object-fit: cover;
     }
-    
+    .hostingIcons
+    {
+        font-size: 0.85em;
+        padding-left: 0px;
+    }
+    .more
+    {
+        margin: 0 0 0 25px;
+        font-size: 18px;
+    }
+    .activityTitle
+    {
+        margin-left: 20px;
+        margin-top: 45px;
+        font-size: 19px;
+    }
+    .activityImgBackground {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-left: 20px;
+    }
+    .activityImgBig, .activityImgFrioul, .activityImg
+    {
+        height: 125px;
+        width: 320px;
+        object-fit: cover;
+    }
+    .activityFrame
+    {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
 }
