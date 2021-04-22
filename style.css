@@ -6,6 +6,7 @@
 body {
     font-family: 'Raleway' , serif;
     margin: 0 40px 0 40px;
+    
 }
 @media (max-width: 900px) {
     body 
@@ -408,7 +409,6 @@ header {
         flex-direction: column;
         margin: 0;
         padding: 22px;
-        width: 100%;
     }
     .aboutLeft, .aboutCenter, .aboutRight 
     {
