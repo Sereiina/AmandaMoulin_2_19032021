@@ -29,6 +29,7 @@ body {
     .Menu
     {
         margin-right: 50px;
+        border-top: 3px solid transparent;
     }
     .Menu:hover {
         color: black;
@@ -316,7 +317,8 @@ header {
 .popularImg {
     height: 135px;
     width: 125px;
-    border-radius: 20px;
+    flex-shrink: 0;
+    border-radius: 20px; 
     object-fit: cover;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
