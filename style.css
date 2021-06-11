@@ -337,7 +337,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 42px;
+    padding-right: 30px;
 }
 .popularContainer > p {
     margin: 5px 0 0 0;
@@ -364,7 +364,7 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     height: 500px;
-    
+    justify-content: space-around;
 }
 .activityImgBig {
     height:390px;
@@ -379,7 +379,7 @@ header {
     object-fit: cover;
 }
 .activityFrame {
-    margin: 0 45px 50px 0;
+    margin: 0 45px 0 0;
     width: fit-content;
     border-radius: 20px;
     box-shadow: 1px 1px 10px #DEEBFF;
@@ -460,14 +460,15 @@ header {
     }
     .buttonSearch
     {
-        width: 55px;
+        width: 50px;
         border-radius: 15px;
         position: relative;
         right: 15px;
     }
     .research
     {
-        width: 250px;
+        max-width: 250px;
+        width: auto;
         height: 50px;
     }
     #filters
@@ -519,6 +520,7 @@ header {
     {
         margin: 0 0 20px 20px;
         max-width: 900px;
+        width: 90%;
         box-shadow: 1px 1px 10px 2px rgb(187 187 187 / 60%);
         max-height: 120px;
         min-height: 120px;
@@ -545,19 +547,23 @@ header {
     
     .popularDescription
     {
-        font-size: 15px;
+        font-size: 14px;
         margin: 10px 0 0px 0;
     }
     #hosting 
     {
+        width: 100%;
         margin: 0px;
         border-radius: 0px;
         background-color: white;
     }
     .hostingImgBackground
     {
-        max-width: 320px;
-        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-left: 20px;
+    
     }
     .hostingFrame
     {
@@ -571,7 +577,7 @@ header {
     .hostingImg
     {
         height: 125px;
-        width: 320px;
+        width: 100%;
         object-fit: cover;
     }
     .hostingIcons
@@ -599,12 +605,14 @@ header {
     .activityImgBig, .activityImgFrioul, .activityImg
     {
         height: 125px;
-        width: 320px;
+        width: 275px;
         object-fit: cover;
+        width: 100%;
     }
     .activityFrame
     {
         margin-right: 0px;
         margin-bottom: 30px;
+        width: 90%;
     }
 }
