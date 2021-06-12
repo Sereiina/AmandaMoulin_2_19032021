@@ -567,7 +567,7 @@ header {
     }
     .hostingFrame
     {
-        margin: 0 0 20px 20px;
+        margin: 0 0 20px 0px;
         box-shadow: 2px 2px 20px #DEEBFF;
     }
     .hostingTitle
