@@ -279,7 +279,7 @@ header {
 .hostingIcon {
     color: grey;
 }
-.hostingIcon:hover {
+.hostingIconColor {
     color: #0065FC;
 } 
 .hostingConteneur > h4 {
