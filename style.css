@@ -43,39 +43,7 @@ body {
     {
         display: none;
     }
-}
-@media (min-width: 900px) and (max-width: 1375px) /* laptops version */  {
-    .activityImgBig 
-    {
-        height: 300px;
-        width: 210px;
-        border-radius: 20px 20px 0 0;
-        object-fit: cover;
-    }
-    .activityImg 
-    {
-        height: 110px;
-        width: 245px;
-        border-radius: 20px 20px 0 0;
-        object-fit: cover;
-    }
-    .activityImgFrioul
-    {
-        height: 110px;
-        width: 245px;
-        border-radius: 20px 20px 0 0;
-        object-fit: cover;
-    }
-    .activityName
-    {
-        font-size: 14px;
-    }
-    .activityFrame
-    {
-        margin: 0 5px 0 0;
-    }
-}
-    
+}   
 
 @media (max-width: 900px) /*mobile*/ {
     .headerDesktop 
@@ -424,6 +392,49 @@ header {
     width: 300px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
+}
+@media (min-width: 900px) and (max-width: 1375px) /* laptops version for activity */  {
+    .headerDesktop 
+    {
+        display: flex;
+    }
+    .headerMobile
+    {
+        display: none;
+    }
+    .activityImgBig 
+    {
+        height: 300px;
+        width: 200px;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+    }
+    .activityImg 
+    {
+        height: 110px;
+        width: 190px;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+    }
+    .activityImgFrioul
+    {
+        height: 110px;
+        width: 190px;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+    }
+    .activityImgBackground
+    {
+        justify-content: center;
+    }
+    .activityFrame > h4
+    {
+        font-size: 14px;
+    }
+    .activityFrame
+    {
+        margin: 0 5px 23px 0;
+    }
 }
 /* ABOUT */
 #about {
