@@ -241,6 +241,7 @@ header {
 }
 #hosting {
     width: fit-content;
+    width: -moz-fit-content;
     margin: 0 40px 0 0;
 }
 .hostingTitle {
@@ -303,6 +304,7 @@ header {
 
 #popular {
     width: fit-content;
+    width: -moz-fit-content;
 }
 
 .popularTitle {
@@ -381,6 +383,7 @@ header {
 .activityFrame {
     margin: 0 45px 0 0;
     width: fit-content;
+    width: -moz-fit-content;
     border-radius: 20px;
     box-shadow: 1px 1px 10px #DEEBFF;
 }
@@ -533,6 +536,7 @@ header {
     .filter 
     { 
         max-width: fit-content;
+        width: -moz-fit-content;
         margin: 10px;
     }
     .filterButton
