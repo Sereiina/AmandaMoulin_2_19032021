@@ -396,12 +396,16 @@ header {
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
-@media (min-width: 900px) and (max-width: 1375px) /* laptops version for activity */  {
+@media (min-width: 901px) and (max-width: 1375px) /* laptops version for activity */  {
     .headerDesktop 
     {
         display: flex;
     }
     .headerMobile
+    {
+        display: none;
+    }
+    .searchIcon
     {
         display: none;
     }
@@ -433,6 +437,7 @@ header {
     .activityFrame > h4
     {
         font-size: 14px;
+        margin-left: 0.5em;
     }
     .activityFrame
     {
